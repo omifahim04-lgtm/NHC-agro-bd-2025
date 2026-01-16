@@ -1,0 +1,695 @@
+<p>&lt;!DOCTYPE html&gt;</p>
+<p>&lt;html lang=&quot;en&quot;&gt;</p>
+<p>&lt;head&gt;</p>
+<p>&nbsp; &nbsp; &lt;meta charset=&quot;UTF-8&quot;&gt;</p>
+<p>&nbsp; &nbsp; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</p>
+<p>&nbsp; &nbsp; &lt;title&gt;NHC Agro bd | ****** Agri-Commodities Leader&lt;/title&gt;</p>
+<p>&nbsp; &nbsp; &lt;link href=&quot;https://cdnjs.cloudflare.com&quot; rel=&quot;stylesheet&quot;&gt;</p>
+<p>&nbsp; &nbsp; &lt;style&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; :root {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --primary: #2e7d32;&nbsp;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --secondary: #fbc02d;&nbsp;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --dark: #333;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --light: #f4f4f4;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; * { margin: 0; padding: 0; box-sizing: border-box; font-family: &apos;Segoe UI&apos;, Tahoma, Geneva, Verdana, sans-serif; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; header {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: #fff;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 1rem 5%;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: flex;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; justify-content: space-between;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; align-items: center;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-shadow: 0 2** 10px rgba(0,0,0,0.1);</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; position: sticky;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; top: 0;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; z-index: 1000;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary); }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .logo span { color: var(--secondary); }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; nav ul { display: flex; list-style: none; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; nav ul li { margin-left: 2rem; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; nav ul li a { text-decoration: none; color: var(--dark); font-weight: 500; transition: 0.3s; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; nav ul li a:hover { color: var(--primary); }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .hero {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; height: 60vh;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),&nbsp;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; url(&apos;https://images.unsplash.com&apos;);</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background-size: cover;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background-position: center;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: flex;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; flex-direction: column;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; justify-content: center;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; align-items: center;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: white;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-align: center;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 0 20px;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .hero h1 { font-size: 3rem; margin-bottom: 1rem; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .hero p { font-size: 1.2rem; max-width: 800px; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .section { padding: 4rem 10%; text-align: center; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .section h2 { margin-bottom: 2rem; color: var(--primary); font-size: 2rem; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .grid {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: grid;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gap: 2rem;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin-top: 2rem;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .card {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: #fff;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 2rem;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 8px;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-shadow: 0 4px 15px rgba(0,0,0,0.05);</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; transition: transform 0.3s;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .card:hover { transform: translateY(-10px); }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .card i { font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .footer {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: var(--dark);</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: white;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 3rem 10%;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: grid;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gap: 2rem;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .footer-col h4 { margin-bottom: 1rem; color: var(--secondary); }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .footer-col p { font-size: 0.9rem; line-height: 1.6; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; @media (max-width: 768px) {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; nav { display: none; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .hero h1 { font-size: 2rem; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p>&nbsp; &nbsp; &lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &lt;header&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;logo&quot;&gt;NHC &lt;span&gt;AGRO&lt;/span&gt;&lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;nav&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ul&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#home&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;About&lt;/a&gt;&lt;/li&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#products&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ul&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/nav&gt;</p>
+<p>&nbsp; &nbsp; &lt;/header&gt;</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &lt;section class=&quot;hero&quot; id=&quot;home&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;h1&gt;Global Leader in Agri-Commodities&lt;/h1&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;********* the finest whole spices, ground spices, and agricultural grains to **** 100 countries since 1960.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &lt;/section&gt;</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &lt;******* class=&quot;section&quot; id=&quot;about&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;h2&gt;Why NHC Agro?&lt;/h2&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;grid&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;*** class=&quot;card&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;i class=&quot;fas fa-award&quot;&gt;&lt;/i&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Quality Certified&lt;/h3&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;*** 22000:2005, Halal, and Kosher certified ensuring international standards.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;card&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;i class=&quot;*** fa-globe&quot;&gt;&lt;/i&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;****** Presence&lt;/h3&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;******* supplier for markets in USA, Europe, Middle East, *** Asia.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;card&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;i class=&quot;fas fa-microchip&quot;&gt;&lt;/i&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;******** Tech&lt;/h3&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Integrated automated ********** ******** from Germany for 100% purity.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &lt;/section&gt;</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &lt;section class=&quot;section&quot; style=&quot;background: var(--light);&quot; id=&quot;products&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;h2&gt;Our Premium Ranges&lt;/h2&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;grid&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;card&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Spice Powders&lt;/h3&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Turmeric, Chilli, Coriander, and Cumin ******* with **** curcumin/oil content.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;card&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Whole Spices&lt;/h3&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Black Pepper, Green Cardamom, Cloves, and Nutmeg ******* ******** **** farms.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;card&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Agri Grains&lt;/h3&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Premium ******* Rice, Wheat, ****** Maize, and various Oil Seeds.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &lt;/section&gt;</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &lt;****** class=&quot;footer&quot; id=&quot;contact&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;footer-col&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h4&gt;*** Foods Limited&lt;/h4&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;A Government Recognized Two Star Export ***** dedicated ** excellence in the **** sector.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;*** class=&quot;footer-col&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h4&gt;******* Info&lt;/h4&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;i class=&quot;fas fa-envelope&quot;&gt;&lt;/i&gt; exports@nhcgroup.com&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;i class=&quot;*** fa-phone&quot;&gt;&lt;/i&gt; +91 22 69875000&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;*** class=&quot;footer-col&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h4&gt;Qu&lt;!DOCTYPE html&gt;</p>
+<p>&lt;html lang=&quot;en&quot;&gt;</p>
+<p>&lt;head&gt;</p>
+<p>&nbsp; &nbsp; &lt;**** charset=&quot;UTF-8&quot;&gt;</p>
+<p>&nbsp; &nbsp; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</p>
+<p>&nbsp; &nbsp; &lt;title&gt;NHC Agro | ****** Agri-Commodities Leader&lt;/title&gt;</p>
+<p>&nbsp; &nbsp; &lt;**** href=&quot;https://cdnjs.cloudflare.com&quot; rel=&quot;stylesheet&quot;&gt;</p>
+<p>&nbsp; &nbsp; &lt;style&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; :root {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --primary: #2e7d32;&nbsp;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --secondary: #fbc02d;&nbsp;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --dark: #333;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --light: #f4f4f4;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; * { margin: 0; padding: 0; box-sizing: border-box; font-family: &apos;Segoe UI&apos;, Tahoma, Geneva, Verdana, sans-serif; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; header {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: #fff;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 1rem 5%;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: flex;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; justify-content: space-between;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; align-items: center;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-shadow: 0 2px 10px rgba(0,0,0,0.1);</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; position: sticky;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; top: 0;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; z-index: 1000;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary); }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .logo span { color: var(--secondary); }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; nav ul { display: flex; list-style: none; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; nav ul li { margin-left: 2rem; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; nav ul li a { text-decoration: none; color: var(--dark); font-weight: 500; transition: 0.3s; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; nav ul li a:hover { color: var(--primary); }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .hero {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; height: 60vh;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),&nbsp;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; url(&apos;https://images.unsplash.com&apos;);</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background-size: cover;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background-position: center;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: flex;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; flex-direction: column;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; justify-content: center;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; align-items: center;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: white;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-align: center;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 0 20px;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .hero h1 { font-size: 3rem; margin-bottom: 1rem; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .hero p { font-size: 1.2rem; max-width: 800px; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .section { padding: 4rem 10%; text-align: center; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .section h2 { margin-bottom: 2rem; color: var(--primary); font-size: 2rem; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .grid {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: grid;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gap: 2rem;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin-top: 2rem;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .card {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: #fff;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 2rem;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 8px;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-shadow: 0 4px 15** rgba(0,0,0,0.05);</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; transition: ********* 0.3s;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .card:hover { transform: translateY(-10px); }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .card i { font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .footer {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: var(--dark);</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: white;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 3rem 10%;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: grid;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gap: 2rem;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .footer-col h4 { margin-bottom: 1rem; color: var(--secondary); }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .footer-col p { font-size: 0.9rem; line-height: 1.6; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; @media (max-width: 768px) {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; nav { display: none; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .hero h1 { font-size: 2rem; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p>&nbsp; &nbsp; &lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &lt;header&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;logo&quot;&gt;*** &lt;span&gt;AGRO&lt;/span&gt;&lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;nav&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ul&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#home&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;About&lt;/a&gt;&lt;/li&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#products&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ul&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/nav&gt;</p>
+<p>&nbsp; &nbsp; &lt;/header&gt;</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &lt;section class=&quot;hero&quot; id=&quot;home&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;h1&gt;Global Leader in Agri-Commodities&lt;/h1&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;********* the finest whole spices, ground spices, and agricultural grains ** **** 100 ********* since 1960.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &lt;/section&gt;</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &lt;section class=&quot;section&quot; id=&quot;about&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;h2&gt;Why NHC Agro?&lt;/h2&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;grid&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;card&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;i class=&quot;fas fa-award&quot;&gt;&lt;/i&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Quality Certified&lt;/h3&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;*** 22000:2005, Halal, and Kosher certified ******** international standards.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;card&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;i class=&quot;fas fa-globe&quot;&gt;&lt;/i&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;****** Presence&lt;/h3&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;******* supplier for markets in USA, Europe, Middle East, and Asia.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;card&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;i class=&quot;fas fa-microchip&quot;&gt;&lt;/i&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Advanced Tech&lt;/h3&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Integrated automated processing ******** from Germany for 100% purity.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &lt;/section&gt;</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &lt;******* class=&quot;section&quot; style=&quot;background: var(--light);&quot; id=&quot;products&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;h2&gt;Our Premium Ranges&lt;/h2&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;grid&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;card&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Spice Powders&lt;/h3&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Turmeric, Chilli, Coriander, and Cumin powders with **** curcumin/oil content.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;card&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;***** Spices&lt;/h3&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Black Pepper, Green Cardamom, Cloves, and Nutmeg sourced directly from farms.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;card&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;**** Grains&lt;/h3&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Premium Basmati Rice, Wheat, ****** Maize, and ******* Oil Seeds.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &lt;/section&gt;</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &lt;****** class=&quot;footer&quot; id=&quot;contact&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;*** class=&quot;footer-col&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h4&gt;NHC ***** Limited&lt;/h4&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;A Government Recognized Two **** Export House dedicated to excellence in the food sector.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;footer-col&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h4&gt;Contact Info&lt;/h4&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;i class=&quot;fas fa-envelope&quot;&gt;&lt;/i&gt; exports@nhcgroup.com&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;i class=&quot;fas fa-phone&quot;&gt;&lt;/i&gt; +91 22 69875000&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;footer-col&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h4&gt;Qu&lt;!DOCTYPE html&gt;</p>
+<p>&lt;html lang=&quot;en&quot;&gt;</p>
+<p>&lt;head&gt;</p>
+<p>&nbsp; &nbsp; &lt;meta charset=&quot;UTF-8&quot;&gt;</p>
+<p>&nbsp; &nbsp; &lt;**** name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</p>
+<p>&nbsp; &nbsp; &lt;title&gt;NHC Agro | Global Agri-Commodities Leader&lt;/title&gt;</p>
+<p>&nbsp; &nbsp; &lt;**** href=&quot;https://cdnjs.cloudflare.com&quot; rel=&quot;stylesheet&quot;&gt;</p>
+<p>&nbsp; &nbsp; &lt;style&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; :root {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --primary: #2e7d32;&nbsp;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --secondary: #fbc02d;&nbsp;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --dark: #333;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --light: #f4f4f4;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; * { margin: 0; padding: 0; box-sizing: border-box; font-family: &apos;Segoe UI&apos;, Tahoma, Geneva, Verdana, sans-serif; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; header {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: #fff;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 1rem 5%;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: flex;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; justify-content: space-between;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; align-items: center;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-shadow: 0 2px 10px rgba(0,0,0,0.1);</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; position: sticky;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; top: 0;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; z-index: 1000;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary); }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .logo span { color: var(--secondary); }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; nav ul { display: flex; list-style: none; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; nav ul li { margin-left: 2rem; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; nav ul li a { text-decoration: none; color: var(--dark); font-weight: 500; transition: 0.3s; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; nav ul li a:hover { color: var(--primary); }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .hero {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; height: 60vh;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),&nbsp;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; url(&apos;https://images.unsplash.com&apos;);</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background-size: cover;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background-position: center;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: flex;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; flex-direction: column;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; justify-content: center;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; align-items: center;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: white;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-align: center;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 0 20px;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .hero h1 { font-size: 3rem; margin-bottom: 1rem; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .hero p { font-size: 1.2rem; max-width: 800px; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .section { padding: 4rem 10%; text-align: center; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .section h2 { margin-bottom: 2rem; color: var(--primary); font-size: 2rem; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .grid {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: grid;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gap: 2rem;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin-top: 2rem;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .card {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: #fff;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 2rem;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 8px;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-shadow: 0 4** 15** rgba(0,0,0,0.05);</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; transition: ********* 0.3s;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .card:hover { transform: translateY(-10px); }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .card i { font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .footer {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: var(--dark);</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: white;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 3rem 10%;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: grid;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gap: 2rem;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .footer-col h4 { margin-bottom: 1rem; color: var(--secondary); }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .footer-col p { font-size: 0.9rem; line-height: 1.6; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; @media (max-width: 768px) {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; nav { display: none; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .hero h1 { font-size: 2rem; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p>&nbsp; &nbsp; &lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &lt;header&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;logo&quot;&gt;NHC &lt;span&gt;AGRO&lt;/span&gt;&lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;nav&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ul&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#home&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;About&lt;/a&gt;&lt;/li&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#products&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ul&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/nav&gt;</p>
+<p>&nbsp; &nbsp; &lt;/header&gt;</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &lt;section class=&quot;hero&quot; id=&quot;home&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;h1&gt;Global Leader ** Agri-Commodities&lt;/h1&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Exporting *** finest whole spices, ****** spices, and agricultural grains to over 100 ********* since 1960.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &lt;/section&gt;</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &lt;section class=&quot;section&quot; id=&quot;about&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;h2&gt;Why *** Agro?&lt;/h2&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;grid&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;*** class=&quot;card&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;i class=&quot;fas fa-award&quot;&gt;&lt;/i&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Quality Certified&lt;/h3&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;ISO 22000:2005, Halal, and ****** ********* ******** ************* standards.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;*** class=&quot;card&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;i class=&quot;fas fa-globe&quot;&gt;&lt;/i&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Global Presence&lt;/h3&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Trusted supplier for markets ** USA, Europe, Middle East, and Asia.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;card&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;i class=&quot;fas fa-microchip&quot;&gt;&lt;/i&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;******** Tech&lt;/h3&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;********** automated processing ******** **** Germany *** 100% purity.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &lt;/section&gt;</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &lt;******* class=&quot;section&quot; style=&quot;background: var(--light);&quot; id=&quot;products&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;h2&gt;Our Premium Ranges&lt;/h2&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;grid&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;card&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Spice Powders&lt;/h3&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Turmeric, Chilli, Coriander, *** ***** powders with high curcumin/oil content.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;card&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Whole Spices&lt;/h3&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;***** Pepper, Green Cardamom, Cloves, and Nutmeg ******* ******** from farms.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;card&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Agri Grains&lt;/h3&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Premium Basmati Rice, Wheat, Yellow Maize, and ******* Oil Seeds.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &lt;/section&gt;</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &lt;footer class=&quot;footer&quot; id=&quot;contact&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;*** class=&quot;footer-col&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h4&gt;NHC Foods Limited&lt;/h4&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;A ********** Recognized Two Star ****** House dedicated to excellence ** the food sector.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;*** class=&quot;footer-col&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h4&gt;Contact Info&lt;/h4&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;i class=&quot;fas fa-envelope&quot;&gt;&lt;/i&gt; exports@nhcgroup.com&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;i class=&quot;fas fa-phone&quot;&gt;&lt;/i&gt; +91 22 69875000&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;footer-col&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h4&gt;Qu&lt;!DOCTYPE html&gt;</p>
+<p>&lt;html lang=&quot;en&quot;&gt;</p>
+<p>&lt;head&gt;</p>
+<p>&nbsp; &nbsp; &lt;meta charset=&quot;UTF-8&quot;&gt;</p>
+<p>&nbsp; &nbsp; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</p>
+<p>&nbsp; &nbsp; &lt;title&gt;*** Agro | Global Agri-Commodities Leader&lt;/title&gt;</p>
+<p>&nbsp; &nbsp; &lt;**** href=&quot;https://cdnjs.cloudflare.com&quot; rel=&quot;stylesheet&quot;&gt;</p>
+<p>&nbsp; &nbsp; &lt;style&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; :root {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --primary: #2e7d32;&nbsp;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --secondary: #fbc02d;&nbsp;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --dark: #333;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --light: #f4f4f4;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; * { margin: 0; padding: 0; box-sizing: border-box; font-family: &apos;Segoe UI&apos;, Tahoma, Geneva, Verdana, sans-serif; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; header {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: #fff;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 1rem 5%;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: flex;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; justify-content: space-between;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; align-items: center;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-shadow: 0 2px 10px rgba(0,0,0,0.1);</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; position: sticky;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; top: 0;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; z-index: 1000;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary); }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .logo span { color: var(--secondary); }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; nav ul { display: flex; list-style: none; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; nav ul li { margin-left: 2rem; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; nav ul li a { text-decoration: none; color: var(--dark); font-weight: 500; transition: 0.3s; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; nav ul li a:hover { color: var(--primary); }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .hero {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; height: 60vh;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),&nbsp;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; url(&apos;https://images.unsplash.com&apos;);</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background-size: cover;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background-position: center;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: flex;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; flex-direction: column;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; justify-content: center;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; align-items: center;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: white;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-align: center;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 0 20px;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .hero h1 { font-size: 3rem; margin-bottom: 1rem; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .hero p { font-size: 1.2rem; max-width: 800px; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .section { padding: 4rem 10%; text-align: center; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .section h2 { margin-bottom: 2rem; color: var(--primary); font-size: 2rem; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .grid {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: grid;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gap: 2rem;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin-top: 2rem;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .card {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: #fff;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 2rem;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 8px;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-shadow: 0 4px 15px rgba(0,0,0,0.05);</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; transition: ********* 0.3s;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .card:hover { transform: translateY(-10px); }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .card i { font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .footer {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: var(--dark);</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: white;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 3rem 10%;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: grid;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gap: 2rem;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .footer-col h4 { margin-bottom: 1rem; color: var(--secondary); }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .footer-col p { font-size: 0.9rem; line-height: 1.6; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; @media (max-width: 768px) {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; nav { display: none; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .hero h1 { font-size: 2rem; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p>&nbsp; &nbsp; &lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &lt;header&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;*** class=&quot;logo&quot;&gt;NHC &lt;span&gt;AGRO&lt;/span&gt;&lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;nav&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ul&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#home&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;About&lt;/a&gt;&lt;/li&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#products&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ul&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/nav&gt;</p>
+<p>&nbsp; &nbsp; &lt;/header&gt;</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &lt;section class=&quot;hero&quot; id=&quot;home&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;h1&gt;****** Leader in Agri-Commodities&lt;/h1&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Exporting the finest whole spices, ground spices, and agricultural ****** to over *** countries since 1960.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &lt;/section&gt;</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &lt;section class=&quot;section&quot; id=&quot;about&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;h2&gt;Why NHC Agro?&lt;/h2&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;grid&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;*** class=&quot;card&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;i class=&quot;fas fa-award&quot;&gt;&lt;/i&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Quality Certified&lt;/h3&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;*** 22000:2005, Halal, and ****** certified ******** ************* standards.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;card&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;i class=&quot;*** fa-globe&quot;&gt;&lt;/i&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Global Presence&lt;/h3&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;******* supplier for markets ** USA, Europe, ****** East, and Asia.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;card&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;i class=&quot;fas fa-microchip&quot;&gt;&lt;/i&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Advanced Tech&lt;/h3&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Integrated automated processing imported from Germany for 100% purity.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &lt;/section&gt;</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &lt;******* class=&quot;section&quot; style=&quot;background: var(--light);&quot; id=&quot;products&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;h2&gt;Our Premium Ranges&lt;/h2&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;*** class=&quot;grid&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;card&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;***** Powders&lt;/h3&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Turmeric, Chilli, Coriander, and ***** ******* with high curcumin/oil content.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;card&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Whole Spices&lt;/h3&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Black Pepper, Green Cardamom, Cloves, *** Nutmeg ******* directly from farms.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;card&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Agri Grains&lt;/h3&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Premium Basmati Rice, Wheat, Yellow Maize, and various Oil Seeds.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &lt;/section&gt;</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &lt;footer class=&quot;footer&quot; id=&quot;contact&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;*** class=&quot;footer-col&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h4&gt;NHC Foods Limited&lt;/h4&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;A Government Recognized *** Star Export House dedicated ** excellence in the food sector.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;footer-col&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h4&gt;Contact Info&lt;/h4&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;i class=&quot;fas fa-envelope&quot;&gt;&lt;/i&gt; exports@nhcgroup.com&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;i class=&quot;*** fa-phone&quot;&gt;&lt;/i&gt; +91 22 69875000&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;*** class=&quot;footer-col&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h4&gt;***** Links&lt;/h4&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Privacy Policy&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Annual Reports&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Sustainability&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>**** &quot;# NHC-agro-bd&quot; &gt;&gt; README.md</p>
+<p>*** init</p>
+<p>git *** README.md</p>
+<p>git commit -m &quot;first commit&quot;</p>
+<p>*** branch -M main</p>
+<p>*** remote add origin https://github.com/omifahim04-lgtm/NHC-agro-bd.git</p>
+<p>git **** -u origiecho &quot;# NHC-agro-bd&quot; &gt;&gt; README.md</p>
+<p>*** init</p>
+<p>git *** README.md</p>
+<p>git commit -m &quot;***** commit&quot;</p>
+<p>git branch -M main</p>
+<p>git remote add origin https://github.com/omifahim04-lgtm/NHC-agro-bd.git</p>
+<p>git push -u origin mainn main</p>
+<p>&nbsp; &nbsp; &lt;/footer&gt;</p>
+<p><br></p>
+<p>&lt;/body&gt;</p>
+<p>&lt;/html&gt;*** Links&lt;/h4&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Privacy Policy&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Annual Reports&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Sustainability&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &lt;/footer&gt;</p>
+<p><br></p>
+<p>&lt;/body&gt;</p>
+<p>&lt;/html&gt;ick Links&lt;/h4&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Privacy Policy&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Annual Reports&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Sustainability&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &lt;/footer&gt;</p>
+<p><br></p>
+<p>&lt;/body&gt;</p>
+<p>&lt;/html&gt;ick Links&lt;/h4&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Privacy Policy&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Annual Reports&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Sustainability&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &lt;/footer&gt;</p>
+<p><br></p>
+<p>&lt;/body&gt;</p>
+<p>&lt;/html&gt;</p>
+<div style="color: red">Word to HTML trial - please <a href="https://wordtohtml.net/site/payment">Go PRO</a> to get whole HTML.</div>
